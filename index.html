@@ -1,0 +1,246 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naaneshwar Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff4ecb, #ff7b00);
+  color: white;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem;
+  background: transparent;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero button {
+  background: #fff;
+  color: #ff4ecb;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.skills div {
+  flex: 1;
+  min-width: 200px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+ul li::before {
+  content: '\2022';
+  color: white;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.project a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.certificates img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .cards, .skills, .certificates {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  }
+  nav a:hover{
+    color: #e2c209;
+  }
+  </style>
+</head><body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>  <!-- Hero Section -->  <section class="hero">
+    <h1>Hi, I'm Naaneshwar</h1>
+    <h2>Frontend Web Developer</h2>
+    <p>I design and code beautiful things, and I love what I do.</p>
+    <button onclick="location.href='#projects'">View my work</button>
+  </section>  <!-- About Me Section -->  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Passionate, driven, and creative, I bring a unique blend of skills and innovation to every project I undertake.
+      With a keen eye for detail and a commitment to excellence, I thrive in dynamic environments where I can solve
+      challenges and push boundaries. Let's create something remarkable together!
+    </p>
+    <div class="skills">
+      <div>
+        <h3>Languages</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Frameworks</h3>
+        <ul>
+          <li>React</li>
+          <li>TailwindCSS</li>
+          <li>Bootstrap</li>
+          <li>NextJS</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Softwares</h3>
+        <ul>
+          <li>Figma</li>
+          <li>Photoshop</li>
+          <li>GitHub</li>
+          <li>Vite</li>
+          <li>AdobeXD</li>
+          <li>Sketch</li>
+        </ul>
+      </div>
+    </div>
+  </section>  <!-- Projects Section -->  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Cosmetics Brand</h3>
+      <a href="https://beautyhub-eight.vercel.app/">Visit Site</a>
+      <ul>
+        <li>Used HTML, Tailwind CSS for styling</li>
+        <li>JavaScript for interactivity</li>
+        <li>Includes payment with Razorpay</li>
+      </ul>
+    </div>
+    <div class="project">
+      <h3>Clothing Brand</h3>
+      <a href="https://aniwear.vercel.app/">Visit Site</a>
+      <ul>
+        <li>Video background on login</li>
+        <li>Responsive using media queries</li>
+        <li>Search engine & payment gateway</li>
+      </ul>
+    </div>
+    <div class="project">
+      <h3>Burger Brand</h3>
+      <a href="https://burger-rust-ten.vercel.app/menu.html">Visit Site</a>
+      <ul>
+        <li>Used gradient background</li>
+        <li>Simple add to cart with JS</li>
+      </ul>
+    </div>
+  </section>  <!-- Contact Section -->  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Contact me if any queries or services</p>
+    <div class="contact-info">
+      <p><strong>Email:</strong> naaneshwar@gmail.com</p>
+      <p><strong>Phone:</strong> 9110270616</p>
+      <p><strong>Instagram:</strong> naaneshwaran.K</p>
+    </div>
+    <h3>Certificates</h3>
+    <div class="certificates">
+      <img src="https://imagizer.imageshack.com/img924/3491/lWUeZP.jpg" alt="Certificate 1">
+      <img src="https://imagizer.imageshack.com/img922/3521/DbCqlw.jpg" alt="Certificate 2">
+      <img src="https://imagizer.imageshack.com/img924/4518/Cta0bP.jpg" alt="Certificate 3">
+    </div>
+  </section>
+</body></html>
