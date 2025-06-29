@@ -4,6 +4,31 @@
   <title>Naaneshwar Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <style>
+    body {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+body.loaded {
+  opacity: 1;
+}
+    .hero button {
+  background: #fff;
+  color: #ff4ecb;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+  background: #e2c209;
+  color: #fff;
+}
     * {
       margin: 0;
       padding: 0;
@@ -243,4 +268,9 @@ ul li::before {
       <img src="https://imagizer.imageshack.com/img924/4518/Cta0bP.jpg" alt="Certificate 3">
     </div>
   </section>
+  <script>
+  window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+  });
+</script>
 </body></html>
